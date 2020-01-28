@@ -94,5 +94,36 @@ portfolio:
       portfolioheading: BEEHEALTHEE
       portfolioimage: /img/4.png
   portfoliotitle: Our Work
+ourapproach:
+  ourapproachlist:
+    - description: >-
+        All great relationships start with a chat. Online or ever coffee,
+        there's no better way of getting to know each other. We'll listen, offer
+        advice, and present solutions which will help achieve your goals.
+      heading: We Talk
+      iconimage: /img/we_talk.png
+    - description: >-
+        Stategise, plan, and execute. We create concepts that challange your
+        ideas and get you thining differently. We then work with you to refine
+        them, leaving you grinning from ear-to-ear.
+      heading: We Think
+      iconimage: /img/we_think.png
+    - description: >-
+        From beautiful brands to exciting websites, we craft our designs with
+        flair, care and attention to detail. We've listened, we've planned, now
+        we make those ideas into a reality.
+      heading: We Create
+      iconimage: /img/we_create.png
+    - description: >-
+        In pixels or on papper, our projects are delivered with the minimum of
+        fuss using a finely tuned process. We keep you posted at every stage,
+        giving you the confidence that we'll deliver your projects on time,
+        every time.
+      heading: We Deliver
+      iconimage: /img/we_deliver.png
+  ourapproachtitle: Our Way
+ourteam:
+  teamlist:
+    - {}
 ---
 
