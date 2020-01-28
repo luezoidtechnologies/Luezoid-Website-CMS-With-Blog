@@ -123,7 +123,11 @@ ourapproach:
       iconimage: /img/we_deliver.png
   ourapproachtitle: Our Way
 ourteam:
+  ourteamtitle: Our Team
   teamlist:
-    - {}
+    - designation: Back-End Developer
+      image: /img/himanshu.png
+      linkedinprofilelink: 'https://www.linkedin.com/in/reddemonfox/'
+      name: Himanshu Sharma
 ---
 
