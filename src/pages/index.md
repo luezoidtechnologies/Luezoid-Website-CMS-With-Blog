@@ -183,6 +183,8 @@ contactus:
 footer:
   copyright: 2019 Luezoid Technologies Pvt. Ltd.
   socialmedialist:
-    - {}
+    - medialink: 'https://www.facebook.com/luezoidtechnologies'
+      socialmediaiconimage: /img/facebook_icon.jpeg
+      socialmedianame: Facebook
 ---
 
