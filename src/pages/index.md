@@ -171,5 +171,18 @@ ourteam:
     - designation: Android Developer
       image: /img/amit_kumar.jpg
       name: Amit Kumar
+contactus:
+  companyaddress: |-
+    125-A, 2nd Floor, Shahpur Jat
+    New Delhi 110049
+    +91 9666718260
+  companyid: info@luezoid.com
+  companylogo: /img/luezoid-logo.png
+  contactustitle: Contact Us
+  heading: GET IN TOUCH
+footer:
+  copyright: 2019 Luezoid Technologies Pvt. Ltd.
+  socialmedialist:
+    - {}
 ---
 
