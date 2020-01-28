@@ -33,6 +33,33 @@ ourservice:
                                 practices and website development standards.
       heading: WEB APPLICATIONS
       image: /img/web-app.png
+    - description: >-
+        The smartphone has changed the way we communicate. Professional mobile
+        development team is
+                                highly skilled and proficient in Native as well as Hybrid application development.
+                                We carefully craft every single app to give the end-user the best product experience possible,
+                                every time they engage - no matter the platform, device, or channel and finally delivery high
+                                quality, cost effective and beautiful mobile application.
+      heading: MOBILE APPLICATION
+      image: /img/mobile-app.png
+    - description: >-
+        Professional designing team are specialists in web and app design. They
+        find a total balance
+                                between usability, aesthetics and code to create a unique user experience. Team have the ability
+                                to take UX/UI design from ideation to production such as user flows, journey diagrams,
+                                wireframes, sketches, prototypes, layouts, UI assets, and production documents etc. and develop
+                                a simple, clean, and attractive UI/front-end and reinforce brand identity through awesome
+                                designs.
+      heading: UI/UX Design
+      image: /img/ui-ux-design.png
+    - description: >-
+        Our digital strategy helps clients identify ways they can better reach
+        current and future
+                                customers. We do this through a whole suite of options and discplines, including Digital
+                                Consultancy, Content Strategy, E-Commerce Strategy. Brand Strategy, Technical Strategy,
+                                Marketing Strategy and Search Strategy.
+      heading: DIGITAL STRATEGY
+      image: /img/digital-marketing.png
   servicetitle: Services
 ---
 
