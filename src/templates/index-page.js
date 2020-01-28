@@ -520,7 +520,7 @@ export const IndexPageTemplate = ({
                             OUR TEAM
             </div>
                         <div className="header-text ml-4">
-                            {ourteamTitle}
+                            {ourteamTitle}{console.log('-------team', teamList)}
             </div>
                     </div>
                 </div>
@@ -528,168 +528,25 @@ export const IndexPageTemplate = ({
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 we-r-zoids">
                         <div className="container">
                             <div className="row">
-                                <div className="col-md-4 team-image" data-id="himanshu-sharma">
-                                    <img alt="Himanshu Sharma" src="assets/images/our_team/himanshu.png" width="100%" height="100%"
+                                {teamList.map((d , index) =>                  
+                                    <div key={index} className="col-md-4 my-3 team-image" data-id={d.name}>
+                                    <img alt={d.name} src={d.image && d.image.childImageSharp ? d.image.childImageSharp.fluid.src : d.image} width="100%" height="100%"
                                         className="team-img" />
                                     <div className="team-member-names-profile text-center pb-3 pt-3">
                                         <h5>
-                                            <a href="https://www.linkedin.com/in/reddemonfox/" target="_blank"
+                                            <a href={d.linkedinprofilelink} target="_blank"
                                                 className="color-white text-decoration-none">
-                                                <i className="fab fa-linkedin color-linkedin"></i> <span>&nbsp;Himanshu Sharma</span>
+                                                <i className="fab fa-linkedin color-linkedin"></i> <span>&nbsp;{d.name}</span>
                                             </a>
                                         </h5>
-                                        <span>Back-End Developer</span>
+                                <span>{d.designation}</span>
                                     </div>
-                                </div>
-                                <div className="col-md-4 team-image" data-id="abhishek-mishra">
-                                    <img alt="Abhishek Mishra" className="gray-scale team-img"
-                                        src="assets/images/our_team/abhishek_mishra.jpeg" width="100%" height="100%" />
-                                    <div className="team-member-names-profile text-center pb-3 pt-3">
-                                        <h5>
-                                            <a href="https://www.linkedin.com/in/choxx/" target="_blank"
-                                                className="color-white text-decoration-none">
-                                                <i className="fab fa-linkedin color-linkedin"></i> <span>&nbsp;Abhishek Mishra</span>
-                                            </a>
-                                        </h5>
-                                        <span>IOT Specialist</span>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 team-image" data-id="keshav-ashta">
-                                    <img alt="Keshav Ashta" className="gray-scale team-img" src="assets/images/our_team/keshav.png"
-                                        width="100%" height="100%" />
-                                    <div className="team-member-names-profile text-center pb-3 pt-3">
-                                        <h5>
-                                            <a href="https://www.linkedin.com/in/keshavashta/" target="_blank"
-                                                className="color-white text-decoration-none">
-                                                <i className="fab fa-linkedin color-linkedin"></i> <span>&nbsp;Keshav Ashta</span>
-                                            </a>
-                                        </h5>
-                                        <span>Full Stack Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row mt-5">
-                                <div className="col-md-4 team-image" data-id="narendra-mohan">
-                                    <img alt="Narendra Mohan" className="gray-scale team-img" src="assets/images/our_team/naren.jpeg"
-                                        width="100%" height="100%" />
-                                    <div className="team-member-names-profile text-center pb-3 pt-3">
-                                        <h5>
-                                            <a href="https://www.linkedin.com/in/narender-mohan-7936059a/" target="_blank"
-                                                className="color-white text-decoration-none">
-                                                <i className="fab fa-linkedin color-linkedin"></i> <span>&nbsp;Narender Mohan</span>
-                                            </a>
-                                        </h5>
-                                        <span>Mobile App Developer</span>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 team-image" data-id="manoj-rawat">
-                                    <img alt="Manoj Singh Rawat" className="gray-scale team-img" src="assets/images/our_team/msr.jpg"
-                                        width="100%" height="100%" />
-                                    <div className="team-member-names-profile text-center pb-3 pt-3">
-                                        <h5>
-                                            <a href="http://www.linkedin.com/in/theMSR/" target="_blank"
-                                                className="color-white text-decoration-none">
-                                                <i className="fab fa-linkedin color-linkedin"></i> <span>&nbsp;Manoj Singh Rawat</span>
-                                            </a>
-                                        </h5>
-                                        <span>Full Stack Developer</span>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 team-image" data-id="sourabh-sahu">
-                                    <img alt="Sourabh Sahu" className="gray-scale team-img" src="assets/images/our_team/sourabh.jpeg"
-                                        width="100%" height="100%" />
-                                    <div className="team-member-names-profile text-center pb-3 pt-3">
-                                        <h5>
-                                            <a href="https://www.linkedin.com/in/saurabh-sahu-a5183494/" target="_blank"
-                                                className="color-white text-decoration-none">
-                                                <i className="fab fa-linkedin color-linkedin"></i> <span>&nbsp;Sourabh Sahu</span>
-                                            </a>
-                                        </h5>
-                                        <span>UI Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row mt-5">
-                                <div className="col-md-4 team-image" data-id="abhishek-verma">
-                                    <img alt="Abhishek" className="gray-scale team-img" src="assets/images/our_team/Abhishek.jpeg"
-                                        width="100%" height="100%" />
-                                    <div className="team-member-names-profile text-center pb-3 pt-3">
-                                        <h5>
-                                            <a href="https://www.linkedin.com/in/volbits/" target="_blank"
-                                                className="color-white text-decoration-none">
-                                                <i className="fab fa-linkedin color-linkedin"></i> <span>&nbsp;Abhishek</span>
-                                            </a>
-                                        </h5>
-                                        <span>Front-End Developer</span>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 team-image" data-id="shubham-yadav">
-                                    <img alt="Shubham Yadav" className="gray-scale team-img" src="assets/images/our_team/shubham.jpeg"
-                                        width="100%" height="100%" />
-                                    <div className="team-member-names-profile text-center pb-3 pt-3">
-                                        <h5>
-                                            <a href="https://www.linkedin.com/in/shubham-yadav-a871a6109/" target="_blank"
-                                                className="color-white text-decoration-none">
-                                                <i className="fab fa-linkedin color-linkedin"></i>&nbsp;Shubham Yadav
-                                </a>                            </h5>
-                                        <span>Front-End Developer</span>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 team-image" data-id="anup-singh">
-                                    <img alt="Anup Singh" className="gray-scale team-img" src="assets/images/our_team/anup_singh.jpg"
-                                        width="100%" height="100%" />
-                                    <div className="team-member-names-profile text-center pb-3 pt-3">
-                                        <h5>
-                                            <a href="https://www.linkedin.com/in/anup-singh-aa8b59126/" target="_blank"
-                                                className="color-white text-decoration-none">
-                                                <i className="fab fa-linkedin color-linkedin"></i>&nbsp;Anup Singh
-                                </a>
-                                        </h5>
-                                        <span>UI Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row mt-5">
-                                <div className="col-md-4 team-image" data-id="prince-verma">
-                                    <img alt="Prince Verma" className="gray-scale team-img" src="assets/images/our_team/prince.jpg"
-                                        width="100%" height="100%" />
-                                    <div className="team-member-names-profile text-center pb-3 pt-3">
-                                        <h5>
-                                            <a href="https://www.linkedin.com/in/prince-verma-a1b920132/" target="_blank"
-                                                className="color-white text-decoration-none">
-                                                <i className="fab fa-linkedin color-linkedin"></i> <span>&nbsp;Prince Verma</span>
-                                            </a>
-                                        </h5>
-                                        <span>Junior Android Developer</span>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 team-image" data-id="mansi">
-                                    <img alt="Mansi" className="gray-scale team-img" src="assets/images/our_team/mansi.jpg"
-                                        width="100%" height="100%" />
-                                    <div className="team-member-names-profile text-center pb-3 pt-3">
-                                        <h5>
-                                            <a href="" target="_blank"
-                                                className="color-white text-decoration-none">
-                                                <i className="fab fa-linkedin color-linkedin"></i>&nbsp;Mansi
-                                </a>
-                                        </h5>
-                                        <span>Junior UI Developer</span>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 team-image" data-id="amit-kumar">
-                                    <img alt="Amit Kumar" className="gray-scale team-img" src="assets/images/our_team/amit_kumar.jpg"
-                                        width="100%" height="100%" />
-                                    <div className="team-member-names-profile text-center pb-3 pt-3">
-                                        <h5>
-                                            <a href="" target="_blank"
-                                                className="color-white text-decoration-none">
-                                                <i className="fab fa-linkedin color-linkedin"></i>&nbsp;Amit Kumar
-                                </a>
-                                        </h5>
-                                        <span>Android Developer</span>
-                                    </div>
-                                </div>
-                            </div>
+                                </div>         
+                                    
+                                )}                                                       
+                            </div>              
+                            
+                            
                         </div>
                     </div>
                 </div>
