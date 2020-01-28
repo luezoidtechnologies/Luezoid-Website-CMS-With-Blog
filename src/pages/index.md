@@ -22,6 +22,17 @@ aboutus:
     learn to create meaningful digital life changing platforms.
   title: We are
 ourservice:
+  servicelist:
+    - description: >-
+        Professional and prominent Development team is proficient in all the
+        contemporary languages and
+                                latest framework
+                                technologies providing the best quality web applications.<br>
+                                Team looks beyond the visual effect of the website and takes other factors into consideration
+                                such as the user-friendliness of the website, ease of maintenance and adhering to the best
+                                practices and website development standards.
+      heading: WEB APPLICATIONS
+      image: /img/web-app.png
   servicetitle: Services
 ---
 
