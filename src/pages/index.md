@@ -21,5 +21,7 @@ aboutus:
     approach work and play with curiosity and experimentation, using what we
     learn to create meaningful digital life changing platforms.
   title: We are
+ourservice:
+  servicetitle: Services
 ---
 
