@@ -11,7 +11,14 @@ export const IndexPageTemplate = ({
     aboutUsTitle,
     aboutUsHeading,
     aboutUsTextContent,
-    aboutUsContentImage, 
+    aboutUsContentImage,
+    contactUsTitle,
+    contactUsHeading,                
+    companyAddress,
+    companyLogo,
+    copyRight,
+    ourteamTitle,
+    teamList    
 }) => (
         <div>
             <div id="dotted-naviagtion" className="dotstyle dotstyle-tooltip align-items-center" id="navbarSupportedContent"
@@ -513,7 +520,7 @@ export const IndexPageTemplate = ({
                             OUR TEAM
             </div>
                         <div className="header-text ml-4">
-                            Our Team
+                            {ourteamTitle}
             </div>
                     </div>
                 </div>
@@ -694,7 +701,7 @@ export const IndexPageTemplate = ({
                             CONTACT US
             </div>
                         <div className="header-text ml-4">
-                            Contact Us
+                        {contactUsTitle}
             </div>
                     </div>
                 </div>
@@ -704,13 +711,13 @@ export const IndexPageTemplate = ({
                         width="100%" height="800" frameBorder="0" allowFullScreen></iframe>
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contact-us-bg forAnimation" style={{ overflow: "hidden" }}>
                         <div className="col-md-12 text-center get-in-touch">
-                            <h6 className="text-black-50">GET IN TOUCH</h6>
+                            <h6 className="text-black-50">{contactUsHeading}</h6>
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mt-5 info-Luezoid">
                             <h2>info@luezoid.com</h2>
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mt-5 luezoid-img">
-                            <img src={image.childImageSharp ? image.childImageSharp.fluid.src : image} className="luezoid-logo" />
+                            <img src={companyLogo && companyLogo.childImageSharp ? companyLogo.childImageSharp.fluid.src : companyLogo} className="luezoid-logo" />
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mt-5 contact-addr-box">
                             <span className="text-black-50">125-A, 2nd Floor, Shahpur Jat</span><br />
@@ -782,6 +789,55 @@ IndexPageTemplate.propTypes = {
         image: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
 
     }),
+    ourservice: PropTypes.shape({
+        servicetitle: PropTypes.string,
+        servicelist: PropTypes.shape({
+            heading: PropTypes.string,
+            description: PropTypes.string,
+            image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+        })
+    }),
+    portfolio: PropTypes.shape({
+        portfoliotitle: PropTypes.string,
+        portfoliolist: PropTypes.shape({
+            portfolioimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+            portfolioheading: PropTypes.string,
+            description: PropTypes.string
+            })
+    }),
+    ourapproach: PropTypes.shape({
+        ourapproachtitle: PropTypes.string,
+        ourapproachlist: PropTypes.shape({
+            iconimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+            heading: PropTypes.string,
+            description: PropTypes.string
+
+        })             
+    }),
+    ourteam: PropTypes.shape({
+        ourteamtitle: PropTypes.string,
+        teamlist: PropTypes.shape({
+            name: PropTypes.string,
+            designation: PropTypes.string,
+            linkedinprofilelink: PropTypes.string,
+            image:PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+        })
+    }),
+    contactus: PropTypes.shape({
+        contactustitle: PropTypes.string,
+        heading: PropTypes.string,
+        companyid: PropTypes.string,
+        companyaddress: PropTypes.string,
+        companylogo: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+    }),
+    footer: PropTypes.shape({
+        copyright: PropTypes.string,
+        socialmedialist: PropTypes.shape({
+            socialmedianame: PropTypes.string,
+            socialmediaiconimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+        }),
+        medialink: PropTypes.string,
+    })
 }
 
 const IndexPage = ({ data }) => {
@@ -796,6 +852,16 @@ const IndexPage = ({ data }) => {
                 aboutUsHeading = {frontmatter.aboutus.heading}
                 aboutUsTextContent = {frontmatter.aboutus.textcontent}
                 aboutUsContentImage = {frontmatter.aboutus.image}
+                contactUsTitle = {frontmatter.contactus.contactustitle}
+                contactUsHeading = {frontmatter.contactus.heading}                
+                companyAddress = {frontmatter.contactus.companyaddress}
+                companyLogo = {frontmatter.contactus.companylogo}
+                copyRight = {frontmatter.footer.copyright}
+                socialMediaName = {frontmatter.footer.socialmedialist.socialmedianame}
+                socialMediaIconImage = {frontmatter.footer.socialmedialist.socialmediaiconimage}
+                mediaLink = {frontmatter.footer.medialink}
+                ourteamTitle = {frontmatter.ourteam.ourteamtitle}
+                teamList = {frontmatter.ourteam.teamlist}
             />
         </Layout>
     )
@@ -812,7 +878,7 @@ IndexPage.propTypes = {
 export default IndexPage
 
 export const pageQuery = graphql`
-  query IndexPageTemplate {
+query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {       
         image {
@@ -839,6 +905,91 @@ export const pageQuery = graphql`
                       ...GatsbyImageSharpFluid
                     }
                   }
+            }
+        }
+        ourservice{
+            servicetitle
+            servicelist{
+                heading
+                description
+                image{
+                    childImageSharp {
+                        fluid(maxWidth: 2048, quality: 100) {
+                          ...GatsbyImageSharpFluid
+                        }
+                      }
+                }
+            }
+        }
+        portfolio{
+            portfoliotitle
+            portfoliolist{
+                portfolioimage{
+                    childImageSharp {
+                        fluid(maxWidth: 2048, quality: 100) {
+                          ...GatsbyImageSharpFluid
+                        }
+                      }
+                }
+                portfolioheading
+                description
+            }
+        }
+        ourapproach{
+            ourapproachtitle
+            ourapproachlist{
+                iconimage{
+                    childImageSharp {
+                        fluid(maxWidth: 2048, quality: 100) {
+                          ...GatsbyImageSharpFluid
+                        }
+                      } 
+                }
+                heading
+                description
+            }
+        }
+        ourteam{
+            ourteamtitle
+            teamlist{
+                name
+                designation
+                linkedinprofilelink
+                image{
+                    childImageSharp {
+                        fluid(maxWidth: 2048, quality: 100) {
+                          ...GatsbyImageSharpFluid
+                        }
+                      } 
+                }
+            }
+        }
+        contactus{
+            contactustitle
+            heading
+            companyid
+            companyaddress
+            companylogo{
+                childImageSharp {
+                    fluid(maxWidth: 2048, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+            }
+
+        }
+        footer{
+            copyright
+            socialmedialist{
+                socialmedianame
+                socialmediaiconimage{
+                    childImageSharp {
+                        fluid(maxWidth: 2048, quality: 100) {
+                          ...GatsbyImageSharpFluid
+                        }
+                      }
+                }
+                medialink
             }
         }
       }
