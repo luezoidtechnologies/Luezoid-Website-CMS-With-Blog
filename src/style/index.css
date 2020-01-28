@@ -1,0 +1,49 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+body,
+div {
+  font-family: "Poppins", sans-serif;
+}
+.luezoid-logo {
+  width: 215px;
+  height: 105px;
+}
+.f_12 {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+.f_16 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.btn-round {
+  border-radius: 20px 20px;
+}
+.luezoid-logo {
+  width: 215px;
+  height: 105px;
+}
+.banner-container {
+  height: 850px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -16rem;
+}
+.color-purple {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.5, #219ffc),
+    color-stop(0.9, #9120fb)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+}

@@ -1,0 +1,1891 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .header-background {
+        font-size: 60px;
+    }
+
+    .header-text {
+        margin-top: 30px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .our-ways-we-develop, .our-ways-we-think {
+        margin-top: 2rem;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+    .header-background {
+        font-size: 65px;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+    .header-background {
+        font-size: 60px;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .header-background {
+        font-size: 60px;
+    }
+
+    .our-way-icon {
+        font-size: 40px !important;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .header-background {
+        font-size: 65px;
+    }
+
+    .our-way-icon {
+        font-size: 40px !important;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .header-background {
+        font-size: 65px;
+    }
+
+    .our-way-icon {
+        font-size: 40px !important;
+    }
+}
+
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .header-background {
+        font-size: 65px;
+    }
+
+    .our-way-icon {
+        font-size: 40px !important;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .header-background {
+        font-size: 75px;
+    }
+
+    .our-way-icon {
+        font-size: 40px !important;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width: 1224px) {
+    .header-background {
+        font-size: 75px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width: 1824px) {
+    .header-background {
+        font-size: 85px;
+    }
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .header-background {
+        font-size: 60px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .header-background {
+        font-size: 60px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+    .header-background {
+        font-size: 55px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    .header-background {
+        font-size: 55px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+}
+
+/* iPhone 6, 7, 8 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+    .header-background {
+        font-size: 60px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    .header-background {
+        font-size: 60px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+}
+
+/* iPhone 6+, 7+, 8+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+    .header-background {
+        font-size: 60px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    .header-background {
+        font-size: 60px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+}
+
+/* iPhone X ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    .header-background {
+        font-size: 60px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    .header-background {
+        font-size: 55px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+}
+
+/* iPhone XS Max, XR ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    .header-background {
+        font-size: 60px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    .header-background {
+        font-size: 60px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+    .header-background {
+        font-size: 55px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    .header-background {
+        font-size: 55px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    .header-background {
+        font-size: 55px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    .header-background {
+        font-size: 55px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    .header-background {
+        font-size: 55px;
+    }
+
+    .header-text {
+        margin-top: -2.2rem;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    .header-background {
+        font-size: 55px;
+    }
+
+    #dotted-naviagtion {
+        display: none;
+    }
+
+    .includeAtom {
+        display: none;
+    }
+
+    .our-service-mobile {
+        display: block;
+    }
+
+    .scroll-icon {
+        margin-top: 15rem;
+    }
+
+    #about_us {
+        margin-top: 15rem;
+    }
+
+    .sec-text-technologies {
+        padding-top: 25rem;
+        padding-left: 10rem;
+        font-size: 22px;
+    }
+
+    .banner-container {
+        height: 642px;
+    }
+
+    .service-slider {
+        display: none;
+    }
+
+    .img-ways {
+        width: 50%;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .detail-header {
+        font-size: 2.5em;
+        line-height: 40px !important;
+        margin-left: 1rem;
+    }
+
+    .detail-content {
+        margin-left: 1rem;
+    }
+
+    .start-project-btn {
+        margin-left: 1rem;
+    }
+
+    .about-us-img {
+        margin-left: 48px !important;
+    }
+
+    .service-img {
+        margin-left: -5px !important;
+    }
+
+    .our-way-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .team-member-details {
+        display: none;
+    }
+
+    .team-member-names-profile {
+        display: block;
+    }
+
+    .luezoid-briefs {
+        text-align: center;
+    }
+}
+
+/*-----animation section start here----*/
+/*@media only screen and  (min-width: 991px) {
+    .slideR2L{
+        -webkit-animation-name: slideRight2Left;
+        -webkit-animation-duration: 2s;
+        -webkit-transform: translateX(0%);
+        -webkit-animation-direction: normal;
+        -moz-animation-name: slideRight2Left;
+        -moz-animation-duration: 2s;
+        -moz-transform: translateX(0%);
+        -moz-animation-direction: normal;
+        animation-name: slideRight2Left;
+        animation-duration: 2s;
+        animation-direction: normal;
+        transform: translateX(0%);
+    }
+    @-webkit-keyframes slideRight2Left {
+        from{
+            transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    @-moz-keyframes slideRight2Left {
+        from{
+            transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    @keyframes slideRight2Left{
+        from{
+            transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    .slideL2R{
+        -webkit-animation-name: slideLeft2Right;
+        -webkit-animation-duration: 2s;
+        -webkit-transform: translateX(0%);
+        -webkit-animation-direction: normal;
+        -moz-animation-name: slideLeft2Right;
+        -moz-animation-duration: 2s;
+        -moz-transform: translateX(0%);
+        -moz-animation-direction: normal;
+        animation-name: slideLeft2Right;
+        animation-duration: 2s;
+        animation-direction: normal;
+        transform: translateX(0%);
+    }
+    @-webkit-keyframes slideLeft2Right {
+        from{
+            transform: translateX(-100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    @-moz-keyframes slideLeft2Right {
+        from{
+            transform: translateX(-100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    @keyframes slideLeft2Right{
+        from{
+            transform: translateX(-100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+
+
+
+
+
+    .bounceIn{
+        -webkit-animation-name: zoomUp;
+        -webkit-animation-duration: 2s;
+        -moz-animation-name: zoomUp;
+        -moz-animation-duration: 2s;
+        animation-name: zoomUp;
+        animation-duration: 2s;
+    }
+    @-webkit-keyframes zoomUp {
+        0% {
+            opacity: 0;
+            transform: scale(.3);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+        70% {
+            transform: scale(.9);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    @-moz-keyframes zoomUp {
+        0% {
+            opacity: 0;
+            transform: scale(.3);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+        70% {
+            transform: scale(.9);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    @keyframes zoomUp{
+        0% {
+            opacity: 0;
+            transform: scale(.3);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+        70% {
+            transform: scale(.9);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    body{
+        overflow-x: hidden!important;
+
+    }
+}*/
+/*-----animation section end here----*/

@@ -38,8 +38,13 @@ const TemplateWrapper = ({ children }) => {
           href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
           color="#ff4400"
         />
-        <meta name="theme-color" content="#fff" />
-
+        <meta name="theme-color" content="#fff" />        
+        <script src={`${withPrefix('/')}script/jquery.js`}></script>
+        <script src={`${withPrefix('/')}script/popper.js`}></script>
+        <script src={`${withPrefix('/')}script/bootstrap.min.js`}></script>
+        <script src={`${withPrefix('/')}script/flickity.pkgd.min.js`}></script>        
+        <script src={`${withPrefix('/')}script/visible.js`}></script>
+        <script src={`${withPrefix('/')}script/main.js`}></script>
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
@@ -47,10 +52,8 @@ const TemplateWrapper = ({ children }) => {
           property="og:image"
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
-      </Helmet>
-      <Navbar />
-      <div>{children}</div>
-      <Footer />
+      </Helmet>     
+      <div>{children}</div>      
     </div>
   )
 }
