@@ -54,11 +54,11 @@ export const IndexPageTemplate = ({
             </div>
             <nav>
                 <a className="navbar-brand" href="#">
-                    <img alt="Luezoid Logo" src={image.childImageSharp ? image.childImageSharp.fluid.src : image} className="luezoid-logo" />
+                    <img alt="Luezoid Logo" src={image && image.childImageSharp ? image.childImageSharp.fluid.src : image} className="luezoid-logo" />
                 </a>
             </nav>
             <div className="container-fluid banner-container" style={{
-                backgroundImage: `url(${bannerimage.childImageSharp ? bannerimage.childImageSharp.fluid.src : bannerimage
+                backgroundImage: `url(${bannerimage && bannerimage.childImageSharp ? bannerimage.childImageSharp.fluid.src : bannerimage
                     })`
             }}>
                 <div className="row" style={{ paddingBottom: "6rem" }}>
@@ -105,7 +105,7 @@ export const IndexPageTemplate = ({
                             overflowX: "hidden",
                             overflowY: "visible"
                         }} className="forAnimation">
-                            <img src={aboutUsContentImage.childImageSharp ? aboutUsContentImage.childImageSharp.fluid.src : aboutUsContentImage} className="about-us-img" width="80%" height="80%"
+                            <img src={aboutUsContentImage && aboutUsContentImage.childImageSharp ? aboutUsContentImage.childImageSharp.fluid.src : aboutUsContentImage} className="about-us-img" width="80%" height="80%"
                                 alt="Creative Partners Images" />
                         </div>
 
