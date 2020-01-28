@@ -129,5 +129,47 @@ ourteam:
       image: /img/himanshu.png
       linkedinprofilelink: 'https://www.linkedin.com/in/reddemonfox/'
       name: Himanshu Sharma
+    - designation: IOT Specialist
+      image: /img/abhishek_mishra.jpeg
+      linkedinprofilelink: 'https://www.linkedin.com/in/choxx/'
+      name: Abhishek Mishra
+    - designation: Full Stack Developer
+      image: /img/keshav.png
+      linkedinprofilelink: 'https://www.linkedin.com/in/keshavashta/'
+      name: Keshav Ashta
+    - designation: Mobile App Developer
+      image: /img/naren.jpeg
+      linkedinprofilelink: 'https://www.linkedin.com/in/narender-mohan-7936059a/'
+      name: Narender Mohan
+    - designation: Full Stack Developer
+      image: /img/msr.jpg
+      linkedinprofilelink: 'http://www.linkedin.com/in/theMSR/'
+      name: Manoj Singh Rawat
+    - designation: UI Developer
+      image: /img/sourabh.jpeg
+      linkedinprofilelink: 'https://www.linkedin.com/in/saurabh-sahu-a5183494/'
+      name: Sourabh Sahu
+    - designation: Front-End Developer
+      image: /img/Abhishek.jpeg
+      linkedinprofilelink: 'https://www.linkedin.com/in/volbits/'
+      name: Abhishek
+    - designation: Front-End Developer
+      image: /img/shubham.jpeg
+      linkedinprofilelink: 'https://www.linkedin.com/in/shubham-yadav-a871a6109/'
+      name: Shubham Yadav
+    - designation: UI Developer
+      image: /img/anup_singh.jpg
+      linkedinprofilelink: 'https://www.linkedin.com/in/anup-singh-aa8b59126/'
+      name: Anup Singh
+    - designation: Junior Android Developer
+      image: /img/prince.jpg
+      linkedinprofilelink: 'https://www.linkedin.com/in/prince-verma-a1b920132/'
+      name: Prince Verma
+    - designation: Junior UI Developer
+      image: /img/mansi.jpg
+      name: Mansi
+    - designation: Android Developer
+      image: /img/amit_kumar.jpg
+      name: Amit Kumar
 ---
 
