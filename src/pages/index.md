@@ -61,5 +61,38 @@ ourservice:
       heading: DIGITAL STRATEGY
       image: /img/digital-marketing.png
   servicetitle: Services
+portfolio:
+  portfoliolist:
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus
+        viverra, tempor ipsum eget, efficitur leo.
+      portfolioheading: TAKKEH
+      portfolioimage: /img/2.png
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus
+        viverra, tempor ipsum eget, efficitur leo.
+      portfolioheading: SAMAGRA GOVERNANCE
+      portfolioimage: /img/7.png
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus
+        viverra, tempor ipsum eget, efficitur leo.
+      portfolioheading: BONO RIDE
+      portfolioimage: /img/1.png
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus
+        viverra, tempor ipsum eget, efficitur leo.
+      portfolioheading: KASO EXPLORERS
+      portfolioimage: /img/3.png
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus
+        viverra, tempor ipsum eget, efficitur leo.
+      portfolioheading: TIMES INTERNET
+      portfolioimage: /img/6.png
+    - description: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus
+        viverra, tempor ipsum eget, efficitur leo.
+      portfolioheading: BEEHEALTHEE
+      portfolioimage: /img/4.png
+  portfoliotitle: Our Work
 ---
 
