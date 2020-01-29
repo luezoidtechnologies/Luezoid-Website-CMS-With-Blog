@@ -284,8 +284,8 @@ h1, h2, h3, h4, h5, h6, span, p, body, div {
 }
 
 .gray-scale {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%)!important; /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%)!important;
 }
 
 .color-facebook {

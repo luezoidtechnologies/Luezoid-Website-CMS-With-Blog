@@ -11,9 +11,7 @@ export const IndexPageTemplate = ({
     aboutUsData, 
     ourserviceData,   
     portfolioData,
-    ourapproachData,
-    ourteamTitle,
-    teamList,
+    ourapproachData,    
     ourTeamData,
     contactUsData,
     footerData    
@@ -86,11 +84,7 @@ export const IndexPageTemplate = ({
                             <div>WE ARE</div>
                         </div>
                         <div className="header-text ml-4">
-                            {aboutUsData && aboutUsData.title ? aboutUsData.title : 'We are'}
-                            {console.log('-------->>>>ourserviceData', ourserviceData)}
-                            {console.log('-------->>>>portfolioData', portfolioData)}
-                            {console.log('-------->>>>ourapproachData', ourapproachData)}
-                            {console.log('---------->>> teamsdata', ourTeamData)}
+                            {aboutUsData && aboutUsData.title ? aboutUsData.title : 'We are'}                            
             </div>
                     </div>
                 </div>
@@ -128,204 +122,61 @@ export const IndexPageTemplate = ({
                             SERVICES
             </div>
                         <div className="header-text ml-4">
-                            Services
+                    {ourserviceData && ourserviceData.servicetitle ? ourserviceData.servicetitle : 'Services'}
             </div>
                     </div>
                 </div>
 
                 <div className="row our-service-mobile">
-                    <div className="col-12 col-md-6">
-                        <div className="row text-center">
-                            <div className="col-md-12">
-                                <img src="assets/images/web-app.png" className="service-img mt-4" alt="Services Image"
-                                    width="100%" height="100%" />
-                            </div>
-                            <div className="col-md-12 mt-5">
-                                <div className="detail-heading">
-                                    WEB APPLICATIONS
-                    </div>
-                                <div className="detail-contents mt-4">
-                                    Professional and prominent Development team is proficient in all the contemporary languages and
-                                    latest framework
-                        technologies providing the best quality web applications.<br />
-                                    Team looks beyond the visual effect of the website and takes other factors into consideration
-                                    such as the user-friendliness of the website, ease of maintenance and adhering to the best
-                                    practices and website development standards.
-                    </div>
-                            </div>
+                    {ourserviceData && ourserviceData.servicelist ? ourserviceData.servicelist.map((data, index) =>
+                    <div key={index} className="col-12 col-md-6">
+                    <div className="row text-center">
+                        <div className="col-md-12">
+                            <img src={data && data.image && data.image.childImageSharp ? data.image.childImageSharp.fluid.src: image} className="service-img mt-4" alt="Services Image"
+                                width="100%" height="100%" />
+                        </div>
+                        <div className="col-md-12 mt-5">
+                            <div className="detail-heading">
+                            {data && data.heading ? data.heading : ''}
+                </div>
+                            <div className="detail-contents mt-4">
+                            {data && data.description ? data.description : ''}                               
+                </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6">
-                        <div className="row text-center">
-                            <div className="col-md-12">
-                                <img src="assets/images/mobile-app.png" className="service-img mt-4" alt="Services Image" width="100%"
-                                    height="100%" />
-                            </div>
-                            <div className="col-md-12 mt-5">
-                                <div className="detail-heading">
-                                    MOBILE APPLICATION
-                    </div>
-                                <div className="detail-contents mt-4">
-                                    The smartphone has changed the way we communicate. Professional mobile development team is
-                                    highly skilled and proficient in Native as well as Hybrid application development.
-                                    We carefully craft every single app to give the end-user the best product experience possible,
-                                    every time they engage - no matter the platform, device, or channel and finally delivery high
-                                    quality, cost effective and beautiful mobile application.
-                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-12 col-md-6">
-                        <div className="row text-center">
-                            <div className="col-md-12">
-                                <img src="assets/images/ui-ux-design.png" className="service-img mt-4" alt="Services Image"
-                                    width="100%" height="100%" />
-                            </div>
-                            <div className="col-md-12 mt-5">
-                                <div className="detail-heading">
-                                    UI/UX Design
-                    </div>
-                                <div className="detail-contents mt-4">
-                                    Professional designing team are specialists in web and app design. They find a total balance
-                                    between usability, aesthetics and code to create a unique user experience. Team have the ability
-                                    to take UX/UI design from ideation to production such as user flows, journey diagrams,
-                                    wireframes, sketches, prototypes, layouts, UI assets, and production documents etc. and develop
-                                    a simple, clean, and attractive UI/front-end and reinforce brand identity through awesome
-                                    designs.
-                    </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-12 col-md-6">
-                        <div className="row text-center">
-                            <div className="col-md-12">
-                                <img src="assets/images/digital-marketing.png" className="service-img mt-4" alt="Services Image"
-                                    width="100%" height="100%" />
-                            </div>
-                            <div className="col-md-12">
-                                <div className="detail-heading mt-5">
-                                    DIGITAL STRATEGY
-                    </div>
-                                <div className="detail-contents mt-4">
-                                    Our digital strategy helps clients identify ways they can better reach current and future
-                                    customers. We do this through a whole suite of options and discplines, including Digital
-                                    Consultancy, Content Strategy, E-Commerce Strategy. Brand Strategy, Technical Strategy,
-                                    Marketing Strategy and Search Strategy.
-                    </div>
-                            </div>
-                        </div>~
-                    </div>
+                </div>
+                    ):''}                                        
                 </div>
 
                 <div className="flickity flickity-fullscreen service-slider">
-                    <div className="gallery-cell">
-                        <div className="row service-1" style={{ flex: "0 0 100%" }} data-id="service-1">
-                            <div className="col-md-6">
-                                <div className="detail-heading">
-                                    WEB APPLICATION
-                    </div>
-                                <div className="detail-contents mt-4">
-                                    Professional and prominent Development team is proficient in all the contemporary languages and
-                                    latest framework
-                        technologies providing the best quality web applications.<br />
-                                    Team looks beyond the visual effect of the website and takes other factors into consideration
-                                    such as the user-friendliness of the website, ease of maintenance and adhering to the best
-                                    practices and website development standards.
-                    </div>
-                                <div className="text-left start-project-btns">
-                                    <a href="start-project.html" target="_blank">
-                                        <button className="btn btn-primary btn-round btn-gradient mt-4 mb-4 f_14 start-project">
-                                            START A PROJECT
-                            </button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-6 text-center">
-                                <img src="assets/images/web-app.png" className="service-img mt-4" alt="Services Image" />
+                    {ourserviceData && ourserviceData.servicelist ? ourserviceData.servicelist.map((data, index) =>
+                    <div key={index} className="gallery-cell">
+                    <div className="row service-1" style={{ flex: "0 0 100%" }} data-id="service-1">
+                        <div className="col-md-6">
+                            <div className="detail-heading">
+                               {data && data.heading ? data.heading : ''}
+                </div>
+                            <div className="detail-contents mt-4">
+                                {data && data.description ? data.description : ''}
+                </div>
+                            <div className="text-left start-project-btns">
+                                <a href="start-project.html" target="_blank">
+                                    <button className="btn btn-primary btn-round btn-gradient mt-4 mb-4 f_14 start-project">
+                                        START A PROJECT
+                        </button>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div className="gallery-cell">
-                        <div className="row service-1" style={{ flex: "0 0 100%" }} data-id="service-1">
-                            <div className="col-md-6">
-                                <div className="detail-heading">
-                                    MOBILE APPLICATION
-                    </div>
-                                <div className="detail-contents mt-4">
-                                    The smartphone has changed the way we communicate. Professional mobile development team is
-                                    highly skilled and proficient in Native as well as Hybrid application development.
-                                    We carefully craft every single app to give the end-user the best product experience possible,
-                                    every time they engage - no matter the platform, device, or channel and finally delivery high
-                                    quality, cost effective and beautiful mobile application.
-                    </div>
-                                <div className="text-left start-project-btns">
-                                    <a href="start-project.html" target="_blank">
-                                        <button className="btn btn-primary btn-round btn-gradient mt-4 mb-4 f_14 start-project">
-                                            START A PROJECT
-                            </button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-6 text-center">
-                                <img src="assets/images/mobile-app.png" className="service-img mt-4" alt="Services Image" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="gallery-cell">
-                        <div className="row service-1" style={{ flex: "0 0 100%" }} data-id="service-1">
-                            <div className="col-md-6">
-                                <div className="detail-heading">
-                                    UI/UX Design
-                    </div>
-                                <div className="detail-contents mt-4">
-                                    Professional designing team are specialists in web and app design. They find a total balance
-                                    between usability, aesthetics and code to create a unique user experience. Team have the ability
-                                    to take UX/UI design from ideation to production such as user flows, journey diagrams,
-                                    wireframes, sketches, prototypes, layouts, UI assets, and production documents etc. and develop
-                                    a simple, clean, and attractive UI/front-end and reinforce brand identity through awesome
-                                    designs.
-                    </div>
-                                <div className="text-left start-project-btns">
-                                    <a href="start-project.html" target="_blank">
-                                        <button className="btn btn-primary btn-round btn-gradient mt-4 mb-4 f_14 start-project">
-                                            START A PROJECT
-                            </button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-6 text-center">
-                                <img src="assets/images/ui-ux-design.png" className="service-img mt-4" alt="UI/UX Design" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="gallery-cell">
-                        <div className="row service-1" style={{ flex: "0 0 100%" }} data-id="service-1">
-                            <div className="col-md-6">
-                                <div className="detail-heading">
-                                    DIGITAL STRATEGY
-                    </div>
-                                <div className="detail-contents mt-4">
-                                    Our digital strategy helps clients identify ways they can better reach current and future
-                                    customers. We do this through a whole suite of options and discplines, including Digital
-                                    Consultancy, Content Strategy, E-Commerce Strategy. Brand Strategy, Technical Strategy,
-                                    Marketing Strategy and Search Strategy.
-                    </div>
-                                <div className="text-left start-project-btns">
-                                    <a href="start-project.html" target="_blank">
-                                        <button className="btn btn-primary btn-round btn-gradient mt-4 mb-4 f_14 start-project">
-                                            START A PROJECT
-                            </button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-6 text-center">
-                                <img src="assets/images/digital-marketing.png" className="service-img mt-4" alt="Services Image" />
-                            </div>
+                        <div className="col-md-6 text-center">
+                            <img src={data && data.image && data.image.childImageSharp ? data.image.childImageSharp.fluid.src: image} className="service-img mt-4" alt="Services Image" />
                         </div>
                     </div>
                 </div>
+                    ) : ''}                   
+                                      
+                </div>
             </div> */}
+
             <div id="portfolio" className="container-fluid">
                 <div className="row">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -341,93 +192,22 @@ export const IndexPageTemplate = ({
                 <div className="l-work-wrapper my-5">
                     <div className="mx-md-5">
                         <div className="row mb-2">
-                            <div className="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-12 p-0 mb-3">
-                                <div className="w-100 d-flex flex-row justify-content-center">
-                                    <a href="http://takkeh.com" target="_blank" className="project-box text-decoration-none text-dark">
-                                        <div className="project-image-sec">
-                                            <img src="assets/images/portfolio/2.png" alt="" className="proj-image img-responsive" />
-                                        </div>
-                                        <div className="about-project-sec py-3 px-2">
-                                            <h5 className="text-center font-weight-bold">TAKKEH</h5>
-                                            <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus viverra,
-                                    tempor ipsum eget, efficitur leo.</p>
-                                        </div>
-                                    </a>
-                                </div>
+                            {portfolioData && portfolioData.portfoliolist ? portfolioData.portfoliolist.map((d, index) => 
+                            <div key = {index} className="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-12 p-0 mb-5">
+                            <div className="w-100 d-flex flex-row justify-content-center">
+                                <a href={d && d.url ? d.url : ''} target="_blank" className="project-box text-decoration-none text-dark">
+                                    <div className="project-image-sec">
+                                        <img src={d && d.portfolioimage && d.portfolioimage ? d.portfolioimage.childImageSharp.fluid.src : image} alt="" className="proj-image img-responsive" />
+                                    </div>
+                                    <div className="about-project-sec py-3 px-2">
+                                        <h5 className="text-center font-weight-bold">{d && d.portfolioheading ? d.portfolioheading : ''}</h5>
+                                        <p className="text-center">{d && d.description ? d.description : ''}</p>
+                                    </div>
+                                </a>
                             </div>
-                            <div className="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-12 p-0 mb-3">
-                                <div className="w-100 d-flex flex-row justify-content-center">
-                                    <a href="http://samagragovernance.in/" target="_blank" className="project-box text-decoration-none text-dark">
-                                        <div className="project-image-sec">
-                                            <img src="assets/images/portfolio/7.png" alt="" className="proj-image img-responsive" />
-                                        </div>
-                                        <div className="about-project-sec py-3 px-2">
-                                            <h5 className="text-center font-weight-bold">SAMAGRA GOVERNANCE</h5>
-                                            <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus viverra,
-                                    tempor ipsum eget, efficitur leo.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-12 p-0 mb-3">
-                                <div className="w-100 d-flex flex-row justify-content-center">
-                                    <a href="https://www.bonoride.com" target="_blank" className="project-box text-decoration-none text-dark">
-                                        <div className="project-image-sec">
-                                            <img src="assets/images/portfolio/1.png" alt="" className="proj-image img-responsive" />
-                                        </div>
-                                        <div className="about-project-sec py-3 px-2">
-                                            <h5 className="text-center font-weight-bold">BONO RIDE</h5>
-                                            <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus viverra,
-                                    tempor ipsum eget, efficitur leo.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className="row mb-2">
-                            <div className="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-12 p-0 mb-3">
-                                <div className="w-100 d-flex flex-row justify-content-center">
-                                    <a href="http://www.kasoexplorers.co.in" target="_blank" className="project-box text-decoration-none text-dark">
-                                        <div className="project-image-sec">
-                                            <img src="assets/images/portfolio/3.png" alt="" className="proj-image img-responsive" />
-                                        </div>
-                                        <div className="about-project-sec py-3 px-2">
-                                            <h5 className="text-center font-weight-bold">KASO EXPLORERS</h5>
-                                            <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus viverra,
-                                    tempor ipsum eget, efficitur leo.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-12 p-0 mb-3">
-                                <div className="w-100 d-flex flex-row justify-content-center">
-                                    <a href="http://timesinternet.in" target="_blank" className="project-box text-decoration-none text-dark">
-                                        <div className="project-image-sec">
-                                            <img src="assets/images/portfolio/6.png" alt="" className="proj-image img-responsive" />
-                                        </div>
-                                        <div className="about-project-sec py-3 px-2">
-                                            <h5 className="text-center font-weight-bold">TIMES INTERNET</h5>
-                                            <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus viverra,
-                                    tempor ipsum eget, efficitur leo.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-12 p-0 mb-3">
-                                <div className="w-100 d-flex flex-row justify-content-center">
-                                    <a href="http://beehealthee.com" target="_blank" className="project-box text-decoration-none text-dark">
-                                        <div className="project-image-sec">
-                                            <img src="assets/images/portfolio/4.png" alt="" className="proj-image img-responsive" />
-                                        </div>
-                                        <div className="about-project-sec py-3 px-2">
-                                            <h5 className="text-center font-weight-bold">BEEHEALTHEE</h5>
-                                            <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus viverra,
-                                    tempor ipsum eget, efficitur leo.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                        </div>              
+                            ) : ''}
+                                         
 
                         </div>
                     </div>
@@ -440,72 +220,27 @@ export const IndexPageTemplate = ({
                             OUR WAY
             </div>
                         <div className="header-text ml-4">
-                            Our Way
+                            {ourapproachData && ourapproachData.ourapproachtitle ? ourapproachData.ourapproachtitle: 'Our Way'}
             </div>
                     </div>
                 </div>
                 <div className="row p-4 mb-4 our-way forAnimation">
-                    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div className="row" style={{ overflowX: "hidden" }}>
-                            <div className="col-lg-2 col-md-3 col-sm-12 col-xs-12 mt-md-3 text-center">
-                                <img src="assets/images/our_ways/1.png" className="img-ways" />
-                            </div>
-                            <div className="col-lg-10 col-md-9 col-sm-12 col-xs-12 our-way-text text-md-left">
-                                <strong className="text-uppercase our-way-headings">We Talk</strong>
-                                <p className="mt-1">
-                                    All great relationships start with a chat. Online or ever coffee, there's no better way of
-                                    getting to know each other. We'll listen, offer advice, and present solutions which will help
-                                    achieve your goals.
-                    </p>
-                            </div>
+                    {ourapproachData && ourapproachData.ourapproachlist ? ourapproachData.ourapproachlist.map((data, index) =>
+                    <div key={index} className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-4">
+                    <div className="row" style={{ overflowX: "hidden" }}>
+                        <div className="col-lg-2 col-md-3 col-sm-12 col-xs-12 mt-md-3 text-center">
+                            <img src={data && data.iconimage && data.iconimage.childImageSharp ? data.iconimage.childImageSharp.fluid.src : ''} className="img-ways" />
+                        </div>
+                        <div className="col-lg-10 col-md-9 col-sm-12 col-xs-12 our-way-text text-md-left">
+                    <strong className="text-uppercase our-way-headings">{data && data.heading ? data.heading : ''}</strong>
+                            <p className="mt-1">{data && data.description ? data.description : ''}                          
+                </p>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div className="row our-ways-we-think" style={{ overflowX: "hidden" }}>
-                            <div className="col-lg-2 col-md-3 col-sm-12 col-xs-12 mt-md-3 text-center">
-                                <img src="assets/images/our_ways/2.png" className="img-ways" />
-                            </div>
-                            <div className="col-lg-10 col-md-9 col-sm-12 col-xs-12 our-way-text text-md-left">
-                                <strong className="text-uppercase our-way-headings">We Think</strong>
-                                <p className="mt-1">
-                                    Stategise, plan, and execute. We create concepts that challange your ideas and get you thining
-                                    differently. We then work with you to refine them, leaving you grinning from ear-to-ear.
-                    </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row p-4 mt-2 forAnimation">
-                    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div className="row" style={{ overflowX: "hidden" }}>
-                            <div className="col-lg-2 col-md-3 col-sm-12 col-xs-12 mt-md-3 text-center">
-                                <img src="assets/images/our_ways/3.png" className="img-ways" />
-                            </div>
-                            <div className="col-lg-10 col-md-9 col-sm-12 col-xs-12 our-way-text text-md-left">
-                                <strong className="text-uppercase our-way-headings">We Create</strong>
-                                <p className="mt-1">
-                                    From beautiful brands to exciting websites, we craft our designs with flair, care and attention
-                                    to detail. We've listened, we've planned, now we make those ideas into a reality.
-                    </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div className="row our-ways-we-develop" style={{ overflowX: "hidden" }}>
-                            <div className="col-lg-2 col-md-3 col-sm-12 col-xs-12 mt-md-3 text-center">
-                                <img src="assets/images/our_ways/4.png" className="img-ways" />
-                            </div>
-                            <div className="col-lg-10 col-md-9 col-sm-12 col-xs-12 our-way-text text-md-left">
-                                <strong className="text-uppercase">We Deliver</strong>
-                                <p className="mt-1">
-                                    In pixels or on papper, our projects are delivered with the minimum of fuss using a finely tuned
-                                    process. We keep you posted at every stage, giving you the confidence that we'll deliver your
-                                    projects on time, every time.
-                    </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div>          
+                    ) : ''}
+                              
+                </div>                
                 <div className="d-flex justify-content-center">
                     <a href="start-project.html" target="_blank">
                         <button className="btn btn-primary btn-round btn-gradient mt-4 mb-4 f_14 start-project">
@@ -594,7 +329,8 @@ export const IndexPageTemplate = ({
                 </div>
             </div>
 
-            <div className="container-fluid">
+            <div className="container-fluid">            
+                            {console.log('---------->>> footer', footerData)}
                 <footer>
                     <div className="row">
                         <div className="footer-list col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2 text-center">
