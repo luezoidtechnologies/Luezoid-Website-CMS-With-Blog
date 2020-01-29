@@ -7,18 +7,16 @@ import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 export const IndexPageTemplate = ({
     image,
-    bannerimage,
-    aboutUsTitle,
-    aboutUsHeading,
-    aboutUsTextContent,
-    aboutUsContentImage,
-    contactUsTitle,
-    contactUsHeading,                
-    companyAddress,
-    companyLogo,
-    copyRight,
+    bannerimage,    
+    aboutUsData, 
+    ourserviceData,   
+    portfolioData,
+    ourapproachData,
     ourteamTitle,
-    teamList    
+    teamList,
+    ourTeamData,
+    contactUsData,
+    footerData    
 }) => (
         <div>
             <div id="dotted-naviagtion" className="dotstyle dotstyle-tooltip align-items-center" id="navbarSupportedContent"
@@ -85,19 +83,23 @@ export const IndexPageTemplate = ({
                 <div className="row">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xl-12">
                         <div className="header-background" style={{ overflowX: "hidden" }}>
-                            <div>{aboutUsTitle}</div>
+                            <div>WE ARE</div>
                         </div>
                         <div className="header-text ml-4">
-                            We are
+                            {aboutUsData && aboutUsData.title ? aboutUsData.title : 'We are'}
+                            {console.log('-------->>>>ourserviceData', ourserviceData)}
+                            {console.log('-------->>>>portfolioData', portfolioData)}
+                            {console.log('-------->>>>ourapproachData', ourapproachData)}
+                            {console.log('---------->>> teamsdata', ourTeamData)}
             </div>
                     </div>
                 </div>
                 <div className="row about-us-content">
                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-5">
                         <div className="detail-header" style={{ lineHeight: "4rem" }}>
-                            {aboutUsHeading}
+                            {aboutUsData && aboutUsData.heading ? aboutUsData.heading : ''}
             </div>
-                        <div className="detail-content mt-3">{aboutUsTextContent}</div>
+                        <div className="detail-content mt-3">{aboutUsData && aboutUsData.textcontent ? aboutUsData.textcontent : ''}</div>
                         <div className="text-left start-project-btn">
                             <a href="start-project.html" target="_blank">
                                 <button className="btn btn-primary btn-round btn-gradient mt-4 mb-4 f_14 start-project">
@@ -112,7 +114,7 @@ export const IndexPageTemplate = ({
                             overflowX: "hidden",
                             overflowY: "visible"
                         }} className="forAnimation">
-                            <img src={aboutUsContentImage && aboutUsContentImage.childImageSharp ? aboutUsContentImage.childImageSharp.fluid.src : aboutUsContentImage} className="about-us-img" width="80%" height="80%"
+                            <img src={aboutUsData && aboutUsData.image && aboutUsData.image.childImageSharp ? aboutUsData.image.childImageSharp.fluid.src : image} className="about-us-img" width="80%" height="80%"
                                 alt="Creative Partners Images" />
                         </div>
 
@@ -331,7 +333,7 @@ export const IndexPageTemplate = ({
                             OUR WORK
             </div>
                         <div className="header-text ml-4">
-                            Our Work
+                            {portfolioData && portfolioData.portfoliotitle ? portfolioData.portfoliotitle : 'Our Work'}
             </div>
                     </div>
                 </div>
@@ -520,7 +522,7 @@ export const IndexPageTemplate = ({
                             OUR TEAM
             </div>
                         <div className="header-text ml-4">
-                            {ourteamTitle}{console.log('-------team', teamList)}
+                            {ourTeamData && ourTeamData.ourteamtitle ? ourTeamData.ourteamtitle : 'Our Team'}
             </div>
                     </div>
                 </div>
@@ -528,7 +530,7 @@ export const IndexPageTemplate = ({
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 we-r-zoids">
                         <div className="container">
                             <div className="row">
-                                {teamList.map((d , index) =>                  
+                                {ourTeamData && ourTeamData.teamlist ? ourTeamData.teamlist.map((d , index) =>                  
                                     <div key={index} className="col-md-4 my-3 team-image" data-id={d.name}>
                                     <img alt={d.name} src={d.image && d.image.childImageSharp ? d.image.childImageSharp.fluid.src : d.image} width="100%" height="100%"
                                         className="team-img" />
@@ -543,7 +545,7 @@ export const IndexPageTemplate = ({
                                     </div>
                                 </div>         
                                     
-                                )}                                                       
+                                ): ''}                                                       
                             </div>              
                             
                             
@@ -558,7 +560,7 @@ export const IndexPageTemplate = ({
                             CONTACT US
             </div>
                         <div className="header-text ml-4">
-                        {contactUsTitle}
+                        {contactUsData && contactUsData.contactustitle ? contactUsData.contactustitle : 'Contact Us'}
             </div>
                     </div>
                 </div>
@@ -568,13 +570,13 @@ export const IndexPageTemplate = ({
                         width="100%" height="800" frameBorder="0" allowFullScreen></iframe>
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contact-us-bg forAnimation" style={{ overflow: "hidden" }}>
                         <div className="col-md-12 text-center get-in-touch">
-                            <h6 className="text-black-50">{contactUsHeading}</h6>
+                            <h6 className="text-black-50">{contactUsData && contactUsData.heading ? contactUsData.heading : ''}</h6>
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mt-5 info-Luezoid">
-                            <h2>info@luezoid.com</h2>
+                                <h2>{contactUsData && contactUsData.companyid ? contactUsData.companyid : ''}</h2>
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mt-5 luezoid-img">
-                            <img src={companyLogo && companyLogo.childImageSharp ? companyLogo.childImageSharp.fluid.src : companyLogo} className="luezoid-logo" />
+                            <img src={contactUsData && contactUsData.companylogo && contactUsData.companylogo.childImageSharp ? contactUsData.companylogo.childImageSharp.fluid.src : image} className="luezoid-logo" />
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mt-5 contact-addr-box">
                             <span className="text-black-50">125-A, 2nd Floor, Shahpur Jat</span><br />
@@ -627,7 +629,7 @@ export const IndexPageTemplate = ({
                         <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
                         <div className="footer-copyright col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
                             <p className="mt-4">
-                                <i className="far fa-copyright"></i> 2019 Luezoid Technologies Pvt. Ltd.
+                                <i className="far fa-copyright"></i> {footerData && footerData.copyright ? footerData.copyright : ''}
                 </p>
                         </div>
                     </div>
@@ -659,7 +661,8 @@ IndexPageTemplate.propTypes = {
         portfoliolist: PropTypes.shape({
             portfolioimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
             portfolioheading: PropTypes.string,
-            description: PropTypes.string
+            description: PropTypes.string,
+            url: PropTypes.string
             })
     }),
     ourapproach: PropTypes.shape({
@@ -704,21 +707,14 @@ const IndexPage = ({ data }) => {
         <Layout>
             <IndexPageTemplate
                 image={frontmatter.image}
-                bannerimage={frontmatter.bannerimage}
-                aboutUsTitle = {frontmatter.aboutus.title}
-                aboutUsHeading = {frontmatter.aboutus.heading}
-                aboutUsTextContent = {frontmatter.aboutus.textcontent}
-                aboutUsContentImage = {frontmatter.aboutus.image}
-                contactUsTitle = {frontmatter.contactus.contactustitle}
-                contactUsHeading = {frontmatter.contactus.heading}                
-                companyAddress = {frontmatter.contactus.companyaddress}
-                companyLogo = {frontmatter.contactus.companylogo}
-                copyRight = {frontmatter.footer.copyright}
-                socialMediaName = {frontmatter.footer.socialmedialist.socialmedianame}
-                socialMediaIconImage = {frontmatter.footer.socialmedialist.socialmediaiconimage}
-                mediaLink = {frontmatter.footer.medialink}
-                ourteamTitle = {frontmatter.ourteam.ourteamtitle}
-                teamList = {frontmatter.ourteam.teamlist}
+                bannerimage={frontmatter.bannerimage}                               
+                aboutUsData = {frontmatter.aboutus}
+                ourserviceData = {frontmatter.ourservice}
+                portfolioData = {frontmatter.portfolio}
+                ourapproachData = {frontmatter.ourapproach}                
+                ourTeamData = {frontmatter.ourteam}
+                contactUsData = {frontmatter.contactus}
+                footerData = {frontmatter.footer} 
             />
         </Layout>
     )
@@ -790,6 +786,7 @@ query IndexPageTemplate {
                 }
                 portfolioheading
                 description
+                url
             }
         }
         ourapproach{
