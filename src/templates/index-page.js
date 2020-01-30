@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
@@ -95,11 +94,11 @@ export const IndexPageTemplate = ({
             </div>
                         <div className="detail-content mt-3">{aboutUsData && aboutUsData.textcontent ? aboutUsData.textcontent : ''}</div>
                         <div className="text-left start-project-btn">
-                            <a href="start-project.html" target="_blank">
+                            <Link to="/contact" target="_blank">
                                 <button className="btn btn-primary btn-round btn-gradient mt-4 mb-4 f_14 start-project">
                                     START A PROJECT
                     </button>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-md-6 align-items-center">
@@ -160,11 +159,11 @@ export const IndexPageTemplate = ({
                                 {data && data.description ? data.description : ''}
                 </div>
                             <div className="text-left start-project-btns">
-                                <a href="start-project.html" target="_blank">
-                                    <button className="btn btn-primary btn-round btn-gradient mt-4 mb-4 f_14 start-project">
-                                        START A PROJECT
-                        </button>
-                                </a>
+                                <Link to="/contact" target="_blank">
+                                <button className="btn btn-primary btn-round btn-gradient mt-4 mb-4 f_14 start-project">
+                                    START A PROJECT
+                    </button>
+                            </Link>
                             </div>
                         </div>
                         <div className="col-md-6 text-center">
@@ -242,12 +241,11 @@ export const IndexPageTemplate = ({
                               
                 </div>                
                 <div className="d-flex justify-content-center">
-                    <a href="start-project.html" target="_blank">
-                        <button className="btn btn-primary btn-round btn-gradient mt-4 mb-4 f_14 start-project">
-                            START A PROJECT
-            </button>
-                    </a>
-                </div>
+                <Link to="/contact" target="_blank">
+                                <button className="btn btn-primary btn-round btn-gradient mt-4 mb-4 f_14 start-project">
+                                    START A PROJECT
+                    </button>
+                            </Link>                </div>
             </div>
 
             <div id="teams" className="container-fluid">
@@ -319,11 +317,11 @@ export const IndexPageTemplate = ({
                             <span>+91 9666718260</span>
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mt-5 mb-5">
-                            <a href="start-project.html" target="_blank">
-                                <button className="btn btn-primary btn-round btn-gradient f_14 start-project">
+                        <Link to="/contact" target="_blank">
+                                <button className="btn btn-primary btn-round btn-gradient mt-4 mb-4 f_14 start-project">
                                     START A PROJECT
                     </button>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
